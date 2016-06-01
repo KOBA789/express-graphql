@@ -31,7 +31,8 @@
     "dist",
     "README.md",
     "LICENSE",
-    "PATENTS"
+    "PATENTS",
+    "index.d.ts"
   ],
   "options": {
     "mocha": "--require resources/mocha-bootload src/**/__tests__/**/*.js"
@@ -94,5 +95,6 @@
   },
   "peerDependencies": {
     "graphql": "^0.5.0-b || ^0.6.0"
-  }
+  },
+  "typings": "index.d.ts"
 }

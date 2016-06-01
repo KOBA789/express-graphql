@@ -1,10 +1,11 @@
-GraphQL HTTP Server Middleware
+GraphQL HTTP Server Middleware ES6 version (forked by koba789)
 ==============================
 
-[![Build Status](https://travis-ci.org/graphql/express-graphql.svg?branch=master)](https://travis-ci.org/graphql/express-graphql)
-[![Coverage Status](https://coveralls.io/repos/graphql/express-graphql/badge.svg?branch=master&service=github)](https://coveralls.io/github/graphql/express-graphql?branch=master)
-
 Create a GraphQL HTTP server with any HTTP web framework that supports connect styled middleware include [Connect](https://github.com/senchalabs/connect) itself and [Express](http://expressjs.com).
+
+## :warning: This is forked version! :warning:
+
+Original build target is ES5 but now Node.js is able to run ES6. This module is customized babel plugins by [koba789](https://github.com/koba789).
 
 ## Installation
 
@@ -98,7 +99,7 @@ If not found in the query-string, it will look in the POST request body.
 If a previous middleware has already parsed the POST body, the `request.body`
 value will be used. Use [`multer`][] or a similar middleware to add support
 for `multipart/form-data` content, which may be useful for GraphQL mutations
-involving uploading files. See an [example using multer](https://github.com/graphql/express-graphql/blob/master/src/__tests__/http-test.js#L650).
+involving uploading files. See an [example using multer](https://github.com/koba789/express-graphql/blob/master/src/__tests__/http-test.js#L650).
 
 If the POST body has not yet been parsed, graphql-express will interpret it
 depending on the provided *Content-Type* header.
